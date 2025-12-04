@@ -1,0 +1,249 @@
+/* GLOBAL STYLES*/
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0d0d17;
+    color: #fff;
+}
+
+/*  NAVBAR */
+header {
+    position: sticky;  
+    top: 0;           
+    z-index: 1000;     
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: #0b0b12;
+}
+
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #28e0b9;
+}
+
+.nav {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    justify-content: right;
+
+}
+
+.nav li {
+    display: flex;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav a:hover {
+    color: #28e0b9;
+}
+
+.nav a.active {
+    color: #28e0b9;
+}
+
+
+/*   HERO SECTION */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 60px 20px 60px;
+}
+
+.hero-text h2 {
+    font-size: 48px;
+    line-height: 1.2;
+}
+
+.hero-text span {
+    color: #28e0b9;
+}
+
+.hero-text p {
+    margin: 15px 0;
+}
+
+.hero-img img {
+    width: 555px;
+    margin-top: -15rem;
+}
+
+.btn {
+    background: #28e0b9;
+    padding: 10px 20px;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* SECTION TITLES*/
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+/*  PRODUCT WRAPPER & ADD BUTTON */
+.product-wrapper {
+    padding: 20px 40px;
+    margin-top: 10px;
+}
+
+.add-btn {
+    background: #28e0b9;
+    padding: 10px 20px;
+    color: #000;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 18px;
+    display: inline-block;
+    margin: 10px 0 20px 0;
+}
+
+/* ================================
+   PRODUCT CONTAINER
+ */
+.product-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* ================================
+   PRODUCT CARD
+================================ */
+.product-card {
+    width: 260px;
+    background: #111322;
+    padding: 20px;
+    border-radius: 12px;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    animation: fadeIn 0.6s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+/* IMAGE CONTAINER */
+.product-image {
+    width: 100%;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.product-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-image img {
+    transform: scale(1.10);
+}
+
+/* ================================
+   TEXT STYLES
+================================ */
+.brand {
+    font-size: 16px;
+    color: #28e0b9;
+    font-weight: bold;
+    margin: 5px 0 2px 0;
+}
+
+.product-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px 0 10px 0;
+}
+
+.product-card p {
+    margin: 6px 0;
+    opacity: 0;
+    animation: fadeSlide 0.5s forwards;
+}
+
+/* ================================
+   BUTTONS (STACKED)
+================================ */
+.card-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: auto;
+}
+
+.edit-btn,
+.delete-btn {
+    padding: 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    border: 2px solid transparent;
+    text-align: center;
+    background: linear-gradient(135deg, #28e0b9, #00cfc0);
+    color: #000;
+    transition: 0.25s ease;
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.edit-btn:hover,
+.delete-btn:hover {
+    background: transparent;
+    color: #28e0b9;
+    border: 2px solid #28e0b9;
+    transform: scale(1.05);
+}
+
+/* ================================
+   ANIMATIONS
+================================ */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeSlide {
+    from {
+        opacity: 0;
+        transform: translateY(6px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

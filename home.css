@@ -1,0 +1,180 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0d0d17;
+    color: #fff;
+}
+
+/*  NAVBAR */
+header {
+    position: sticky;  
+    top: 0;           
+    z-index: 1000;     
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: #0b0b12;
+}
+
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #28e0b9;
+}
+
+.nav {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    justify-content: right;
+
+}
+
+.nav li {
+    display: flex;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav a:hover {
+    color: #28e0b9;
+}
+
+.nav a.active {
+    color: #28e0b9;
+}
+/* HOME*/
+.hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 60px 0px 60px;
+}
+
+.hero-text h2 {
+    font-size: 48px;
+    line-height: 1.2;
+}
+
+.hero-text span {
+    color: #28e0b9;
+}
+
+.hero-text p {
+    margin: 15px 0;
+}
+
+.hero-img img {
+    width: 555px;
+    margin-top: -19rem;
+}
+
+.btn {
+    background: #28e0b9;
+    padding: 10px 20px;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* SECTION TITLES */
+.section-title {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 30px;
+}
+
+/* COLLECTION */
+.collection {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+.big-box, .small-box, .small-box1 {
+    background: #111322;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.big-box img, .small-box img {
+    width: 200px;
+}
+.small-box1 img{
+    width: 150px;
+    margin-top: 100px;
+    
+    
+}
+
+/* MEN’S SHOES CARDS */
+.mens {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+    flex-wrap: wrap; 
+}
+
+/* EACH CARD */
+.card {
+    background: #111322;
+    width: 200px;           
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;     
+}
+
+/* IMAGE */
+.card img {
+    width: 150px;           
+    height: 150px;          
+    object-fit: cover;     
+    margin-bottom: 10px;   
+}
+
+/* TEXT UNDER IMAGE */
+.card h4 {
+    margin: 0;
+    font-size: 16px;       
+    color: #fff;
+    text-align: center;
+    min-height: 40px;       
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    align-items: center;
+}
+
+.about-img {
+    width: 300px;
+}
+
+.btn-sm {
+    background: #28e0b9;
+    padding: 8px 15px;
+    display: inline-block;
+    margin-top: 10px;
+    border-radius: 5px;
+    color: #000;
+    text-decoration: none;
+}
+

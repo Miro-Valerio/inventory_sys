@@ -1,0 +1,212 @@
+/* ================================
+   GENERAL BODY
+================================ */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0d0d17;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+header {
+    position: sticky;  
+    top: 0;           
+    z-index: 1000;     
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: #0b0b12;
+}
+
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #28e0b9;
+}
+
+.nav {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    justify-content: right;
+
+}
+
+.nav li {
+    display: flex;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav a:hover {
+    color: #28e0b9;
+}
+
+.nav a.active {
+    color: #28e0b9;
+}
+
+
+
+/* ================================
+   MAIN CONTAINER
+================================ */
+.container {
+    max-width: 696px;
+    margin: 30px auto;
+    background-color: #111322;
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+}
+
+/* ================================
+   HEADINGS
+================================ */
+h1 {
+    color: #28e0b9;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* ================================
+   FORM STYLES
+================================ */
+form label {
+    font-weight: bold;
+    color: #28e0b9;
+    display: block;
+    margin-bottom: 8px;
+}
+
+form input[type="text"],
+form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #444;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+form input[type="submit"] {
+    background-color: #28e0b9;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+}
+
+form input[type="submit"]:hover {
+    background-color: #1fae96; /* slightly darker */
+    color: #fff;
+}
+
+/* ================================
+   TABLE STYLES
+================================ */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #333;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #28e0b9;
+    color: #000;
+}
+
+/* Table hover */
+table tr:hover {
+    background-color: #1a1a2e;
+}
+
+/* ================================
+   INPUT STYLING
+================================ */
+input, select {
+    padding: 8px;
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    font-size: 14px;
+}
+
+
+img.product-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* UNIVERSAL BUTTON STYLE FIXED */
+button.btn-main {
+    background-color: #28e0b9 !important;
+    color: #000 !important;
+    padding: 8px 16px;
+    border-radius: 6px;
+    border: 2px solid transparent !important;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    transition: 0.25s ease;
+}
+
+/* HOVER EFFECT */
+button.btn-main:hover {
+    background: transparent !important;
+    color: #28e0b9 !important;
+    border: 2px solid #28e0b9 !important;
+}
+
+/* Remove anchor styling affecting buttons */
+a button {
+    all: unset;
+    display: inline-block;
+    background-color: #28e0b9;
+    color: #000000;
+    padding: 8px 16px;
+    border-radius: 3px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: 0.25s ease;
+}
+
+/* Hover fix for anchor-wrapped buttons */
+a button:hover {
+    background: transparent;
+    color: #28e0b9;
+    border: 2px solid #28e0b9;
+}
+
+/* Edit/Delete alignment */
+.action-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+}
+
+
+
